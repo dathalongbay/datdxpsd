@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
+
+    <style type="text/css">
+
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("dongho_900x900.png");
+
+            /* Set a specific height */
+            height: 500px;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Place text in the middle of the image */
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        /*
+        services
+        */
+
+        .services {
+
+        }
+
+        .services h3 {
+            text-align: center;
+            font-size: 32px;
+            color: orange;
+            margin-top: 50px;
+        }
+
+        .services .service-title {
+            padding: 15px 0;
+        }
+
+        .services .service-title::after {
+            content: "";
+            height: 6px;
+            width: 40px;
+            background-color: #0a55ea;
+            display: block;
+        }
+
+        .services .services-box {
+
+        }
+
+        .services .services-box:hover {
+            background-color: #0a55ea;
+            color: white;
+        }
+
+        /*
+        end services
+       */
+
+        /*
+        portfolio
+       */
+        .portfolio-image {
+            position: relative;
+        }
+
+        .portfolio-image img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .portfolio-image .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #0a55ea;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+        }
+
+
+        .overlay .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .portfolio-image:hover .overlay {
+            transform: scale(1);
+        }
+
+
+
+        .portfolio .portfolio-box {
+            margin-top: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="page-wrap">
+
+        <header>
+            <div class="logo">
+                <a href="#">PORTFOLIO</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="">Home</a> </li>
+                    <li><a href="">Demo</a> </li>
+                    <li><a href="">Hire me</a> </li>
+                    <li><a href="">Contact</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="banner">
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h1>I am John Doe</h1>
+                        <p>And I'm a Photographer</p>
+                        <button>Hire me</button>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="services">
+            <div class="container">
+                <h3>Service</h3>
+                <div class="row">
+                    <div class="col-sm-4 services-box">
+                        <i class="far fa-gem"></i>
+                        <h4 class="service-title">Mobile app</h4>
+                        <p class="service-intro">Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <div class="col-sm-4 services-box">
+                        <i class="far fa-gem"></i>
+                        <h4 class="service-title">Mobile app</h4>
+                        <p class="service-intro">Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <div class="col-sm-4 services-box">
+                        <i class="far fa-magic"></i>
+                        <h4 class="service-title">Mobile app</h4>
+                        <p class="service-intro">Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="portfolio">
+            <div class="container">
+                <h3>Portfolio</h3>
+                <div class="row">
+                    <div class="col-sm-4 portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="dongho_900x900.png">
+                            <div class="overlay">
+                                <div class="cat text">Branding</div>
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="dongho_900x900.png">
+                            <div class="overlay">
+                                <div class="cat text">Branding</div>
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="dongho_900x900.png">
+                            <div class="overlay">
+                                <div class="cat text">Branding</div>
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="dongho_900x900.png">
+                            <div class="overlay">
+                                <div class="cat text">Branding</div>
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="dongho_900x900.png">
+                            <div class="overlay">
+                                <div class="cat text">Branding</div>
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="dongho_900x900.png">
+                            <div class="overlay">
+                                <div class="cat text">Branding</div>
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="hire-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-sm-8">
+                            <h4 class="hire-me-title">MAKE IT AWESOME</h4>
+                            <p>
+                                Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a class="hire-me-button">Hire me</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="feedback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <div class="owl-carousel">
+                            <div class="feedback-item">
+                                <h3>What clients feedback about me</h3>
+                                <div class="feedback-info">
+                                    <img class="feedback-avatar" src="dongho_900x900.png" style="width: 30px">
+                                    <h5>John One</h5>
+                                    <p class="feedback-job">CEO</p>
+                                </div>
+                                <div class="feedback-content">
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </div>
+                            </div>
+
+                            <div class="feedback-item">
+                                <h3>What clients feedback about me</h3>
+                                <div class="feedback-info">
+                                    <img class="feedback-avatar" src="dongho_900x900.png" style="width: 30px">
+                                    <h5>John One</h5>
+                                    <p class="feedback-job">CEO</p>
+                                </div>
+                                <div class="feedback-content">
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </div>
+                            </div>
+
+                            <div class="feedback-item">
+                                <h3>What clients feedback about me</h3>
+                                <div class="feedback-info">
+                                    <img class="feedback-avatar" src="dongho_900x900.png" style="width: 30px">
+                                    <h5>John One</h5>
+                                    <p class="feedback-job">CEO</p>
+                                </div>
+                                <div class="feedback-content">
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </div>
+                            </div>
+
+                            <div class="feedback-item">
+                                <h3>What clients feedback about me</h3>
+                                <div class="feedback-info">
+                                    <img class="feedback-avatar" src="dongho_900x900.png" style="width: 30px">
+                                    <h5>John One</h5>
+                                    <p class="feedback-job">CEO</p>
+                                </div>
+                                <div class="feedback-content">
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </div>
+                            </div>
+
+                            <div class="feedback-item">
+                                <h3>What clients feedback about me</h3>
+                                <div class="feedback-info">
+                                    <img class="feedback-avatar" src="dongho_900x900.png" style="width: 30px">
+                                    <h5>John One</h5>
+                                    <p class="feedback-job">CEO</p>
+                                </div>
+                                <div class="feedback-content">
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                    Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="footer-menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="">Home</a> </li>
+                                    <li><a href="">Demo</a> </li>
+                                    <li><a href="">Hire me</a> </li>
+                                    <li><a href="">Contact</a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-socials">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="footer-copyright">
+                            Copyright @2019 PSD Template
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                items: 1,
+                dots:true
+            });
+        });
+    </script>
+</body>
+</html>
