@@ -10,8 +10,7 @@
 
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <style type="text/css">
         :root {
             --main-color: #1769ff;
@@ -23,264 +22,274 @@
             clear: both;
             content: "";
         }
-
-        header {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f4f2f0;
-        }
-
-        .logo a {
-            font-size: 32px;
-            color: black;
-        }
-
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            float: right;
-        }
-
-
-        header nav li {
-            float: left;
-        }
-
-        header nav li a {
-            padding: 10px 20px;
-            color: black;
-            font-size: 32px;
-        }
-
-        .hero-image {
-            /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-           /* background: #f4f2f0 url("images/portfolio-website-template_02.png") top left;*/
-            background-image: /*url("images/portfolio-website-template_02.png"),*/ url("images/portfolio-website-template_03.png");
-            background-position: /*left top,*/ right top;
-            background-repeat: /*no-repeat,*/ repeat;
-            /* Set a specific height */
-            height: 700px;
-
-            /* Position and center the image to scale nicely on all screens */
-            position: relative;
-        }
-
-        /* Place text in the middle of the image */
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 70%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-
-        /*
-        services
-        */
-
-        .services {
-
-        }
-
-        .services h3 {
-            text-align: center;
-            font-size: 32px;
-            color: orange;
-            margin-top: 50px;
-        }
-
-        .services .service-title {
-            padding: 15px 0;
-        }
-
-        .services .service-title::after {
-            content: "";
-            height: 6px;
-            width: 40px;
-            background-color: var(--main-color);
-            display: block;
-        }
-
-        .services .services-box {
-            padding: 40px 0;
-            transition: background-color 1s ease;
-            text-align: center;
-        }
-
-        .services .services-box i {
-            font-size: 48px;
-        }
-
-        .services .services-box:hover {
-            background-color: var(--main-color);
-            color: white;
-            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        /*
-        end services
-       */
-
-        /*
-        portfolio
-       */
-        .portfolio-image {
-            position: relative;
-        }
-
-        .portfolio-image img{
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .portfolio-image .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--main-color);
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            transform: scale(0);
-            transition: .3s ease;
-        }
-
-
-        .overlay .text {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .portfolio-image:hover .overlay {
-            transform: scale(0.8);
-        }
-
-
-
-        .portfolio .portfolio-box {
-            margin-top: 30px;
-        }
-
-        .footer-menu ul {
-            list-style: none;
-        }
-
-        .footer-menu li {
-            float: left;
-            font-size: 26px;
-            color: black;
-
-        }
-
-        .footer-menu li a {
-            color: black;
-            padding: 20px 20px;
-        }
-
-
-        .feedback-item {
-            text-align: center;
-        }
-
-        .feedback-item img {
-            margin: auto;
-        }
-
-        .owl-dots {
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        button.owl-dot {
-
-
-            width: 20px;
-            height: 20px;
-            border-radius: 30px;
-            margin: 0 12px;
-            padding: 20px !important;
-            border: 2px solid transparent;
-            position: relative;
-            outline: none;
-        }
-
-        button.owl-dot::after {
-            content: '';
-            background-color: #bebebe !important;
-            color: black !important;
-            width: 8px;
-            height: 8px;
-            border-radius: 30px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-
-        button.owl-dot.active {
-            border: 1px solid var(--main-color) !important;
-        }
-
-
-        .btn-hireme {
-            border: 3px solid var(--main-color);
-            border-radius: 40px;
-            color: var(--main-color);
-        }
-
     </style>
 </head>
 <body>
 
     <div class="page-wrap">
 
+        <style type="text/css">
+            header {
+                padding-top: 40px;
+                padding-bottom: 40px;
+                background-color: #f4f2f0;
+            }
+
+            header .logo a {
+                font-family: 'Poppins', sans-serif;
+                font-size: 32px;
+                color: black;
+                text-decoration: none;
+                letter-spacing: 6px;
+            }
+
+            header nav ul {
+                list-style: none;
+                margin: 0;
+                float: right;
+            }
+
+            header nav li {
+                float: left;
+            }
+
+            header nav li a {
+                padding: 10px 20px;
+                color: #333333;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            header nav li a:hover {
+                text-decoration: none;
+                color: var(--main-color);
+            }
+
+            header .btn-hireme-box a {
+                font-family: 'Poppins', sans-serif;
+                border: 1px solid var(--main-color);
+                border-radius: 40px;
+                color: var(--main-color);
+                text-decoration: none;
+                padding: 12px 20px;
+                font-weight: bold;
+            }
+
+            @media screen and (max-width: 600px) {
+                header .logo {
+                    text-align: center;
+                }
+
+                header nav {
+                    text-align: center;
+                }
+                header nav ul {
+                    text-align: center;
+                    padding: 0;
+                    float: none;
+                }
+
+                header nav ul li{
+                    float: none;
+                }
+                header .btn-hireme-box {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+
+            }
+        </style>
+
         <header class="clearfix">
             <div class="container">
                 <div class="row">
-                        <div class="logo col-sm-4">
+                        <div class="logo col-sm-4 col-12">
                             <a href="#">PORTFOLIO</a>
                         </div>
 
-                        <nav class="col-sm-8">
+                        <nav class="col-sm-6 col-12">
                             <ul class="clearfix">
-                                <li><a href="">Home</a> </li>
-                                <li><a href="">Demo</a> </li>
+                                <li><a href="#">Home</a> </li>
+                                <li><a href="#">Demo</a> </li>
+                                <li><a href="#">Contact</a> </li>
 
-                                <li><a href="">Contact</a> </li>
-                                <li><a href="" class="btn-hireme">Hire me</a> </li>
                             </ul>
                         </nav>
+
+                        <div class="col-sm-2 col-12 btn-hireme-box">
+                            <a href="#" >Hire me!</a>
+                        </div>
                 </div>
 
             </div>
 
         </header>
 
+        <style type="text/css">
+            .banner .hero-image {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                /* background: #f4f2f0 url("images/portfolio-website-template_02.png") top left;*/
+                background-image: /*url("images/portfolio-website-template_02.png"),*/ url("images/portfolio-website-template_03.png");
+                background-position: /*left top,*/ right top;
+                background-repeat: /*no-repeat,*/ repeat;
+                /* Set a specific height */
+                height: 700px;
+
+                /* Position and center the image to scale nicely on all screens */
+                position: relative;
+            }
+
+            .banner .hero-img > img {
+                height: 700px;
+            }
+
+            /* Place text in the middle of the image */
+            .banner .hero-text {
+                position: absolute;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            .banner .hero-text .primary-hero {
+                font-family: 'Raleway', sans-serif;
+                font-size: 36px;
+                color: #333333;
+                text-transform: capitalize;
+            }
+
+            .banner .hero-text .secondary-hero {
+                font-family: 'Poppins', sans-serif;
+                font-size: 48px;
+                color: #333333;
+                text-transform: capitalize;
+                margin-top: 20px;
+            }
+
+            .banner .hero-text .third-hero {
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                color: #777777;
+                padding-bottom: 30px;
+            }
+
+            .banner .hero-text a.see-my-work {
+                margin-top: 60px;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                color: white;
+                background-color: var(--main-color);
+                padding: 20px 40px;
+                border-radius: 40px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .banner .hero-img > img {
+                    height: auto;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .banner .hero-text {
+                    position: static;
+                    transform: translate(0, 0);
+                    text-align: center;
+                    margin-top: 40px;
+                }
+
+                .banner .hero-text .primary-hero {
+                    font-size: 20px !important;
+                }
+
+                .banner .hero-text .secondary-hero {
+                    font-size: 22px !important;
+                }
+
+                .banner .hero-text .third-hero {
+                    font-size: 14px !important;
+                }
+
+            }
+        </style>
+
         <section class="banner">
                 <div class="hero-image">
                     <div class="hero-img">
-                        <img src="images/portfolio-website-template_02.png" style="height: 700px">
+                        <img src="images/portfolio-website-template_02.png" alt="">
                     </div>
-                    <div class="hero-text" style="font-size: 28px; color: black">
-                        <h1>I am John Doe</h1>
-                        <p>And I'm a Photographer</p>
-                        <p>Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-                        <button style="border:none;border-radius: 50px;background-color: #0a55ea; padding: 20px 50px; color: white">Hire me</button>
+                    <div class="hero-text">
+                        <h1 class="primary-hero">I am Deeje</h1>
+                        <h2 class="secondary-hero">Expert in Graphic
+                            Design &Development</h2>
+                        <p class="third-hero">
+                            Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada.
+                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                        </p>
+                        <a href="#" class="see-my-work">SEE MY WORK</a>
                     </div>
                 </div>
         </section>
 
+        <style type="text/css">
+            .services {
+                padding: 90px 0;
+            }
 
-        <section class="services" style="padding: 90px 0">
+
+            .services h3 {
+                text-align: center;
+                font-size: 32px;
+                margin: 50px 0;
+                font-family: 'Poppins', sans-serif;
+                color: #333333;
+                text-transform: uppercase;
+            }
+
+            .services .service-title {
+                padding: 20px 0;
+                position: relative;
+            }
+
+            .services .service-title::after {
+                content: "";
+                height: 4px;
+                width: 40px;
+                background-color: var(--main-color);
+                display: block;
+                position: absolute;
+                left: 170px;
+                top: 60px;
+                text-align: center;
+            }
+
+            .services .services-box {
+                padding: 70px 0;
+                transition: background-color 1s ease;
+                text-align: center;
+            }
+
+            .services .services-box i {
+                font-size: 48px;
+            }
+
+            .services .services-box:hover {
+                background-color: var(--main-color);
+                color: white;
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .services .services-box:hover .service-title::after {
+                background-color: white;
+            }
+        </style>
+
+        <section class="services">
             <div class="container">
-                <h3 style="text-shadow: 5px 5px  red;">Service</h3>
+                <h3>Service</h3>
                 <div class="row">
                     <div class="col-sm-4 services-box">
                         <i class="fas fa-fill-drip"></i>
@@ -301,14 +310,69 @@
             </div>
         </section>
 
+        <style type="text/css">
+            .portfolio {
+                padding: 170px 0;
+                background-color: #f4f4f4;
+            }
 
-        <section class="portfolio" style="padding: 170px 0; background-color: #f4f4f4">
+            .portfolio h3 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 32px;
+                color: #333333;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .portfolio .portfolio-image {
+                position: relative;
+            }
+
+            .portfolio .portfolio-image img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .portfolio .portfolio-image .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: var(--main-color);
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                transform: scale(0);
+                transition: .3s ease;
+            }
+
+            .portfolio .overlay .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .portfolio .portfolio-image:hover .overlay {
+                transform: scale(0.8);
+            }
+
+            .portfolio .portfolio-box {
+                margin-top: 30px;
+            }
+        </style>
+
+        <section class="portfolio">
             <div class="container">
                 <h3>Portfolio</h3>
                 <div class="row">
                     <div class="col-sm-4 portfolio-box">
                         <div class="portfolio-image">
-                            <img src="images/portfolio-website-template_03.jpg">
+                            <img src="images/portfolio-website-template_03.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">
                                     <p class="cat">Branding</p>
@@ -319,7 +383,7 @@
                     </div>
                     <div class="col-sm-4 portfolio-box">
                         <div class="portfolio-image">
-                            <img src="images/portfolio-website-template_05.jpg">
+                            <img src="images/portfolio-website-template_05.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">
                                     <p class="cat">Branding</p>
@@ -330,7 +394,7 @@
                     </div>
                     <div class="col-sm-4 portfolio-box">
                         <div class="portfolio-image">
-                            <img src="images/portfolio-website-template_07.jpg">
+                            <img src="images/portfolio-website-template_07.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">
                                     <p class="cat">Branding</p>
@@ -341,7 +405,7 @@
                     </div>
                     <div class="col-sm-4 portfolio-box">
                         <div class="portfolio-image">
-                            <img src="images/portfolio-website-template_12.jpg">
+                            <img src="images/portfolio-website-template_12.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">
                                     <p class="cat">Branding</p>
@@ -352,7 +416,7 @@
                     </div>
                     <div class="col-sm-4 portfolio-box">
                         <div class="portfolio-image">
-                            <img src="images/portfolio-website-template_13.png">
+                            <img src="images/portfolio-website-template_13.png" alt="">
                             <div class="overlay">
                                 <div class="text">
                                     <p class="cat">Branding</p>
@@ -363,7 +427,7 @@
                     </div>
                     <div class="col-sm-4 portfolio-box">
                         <div class="portfolio-image">
-                            <img src="images/portfolio-website-template_13.png">
+                            <img src="images/portfolio-website-template_13.png" alt="">
                             <div class="overlay">
                                 <div class="text">
                                     <p class="cat">Branding</p>
@@ -376,29 +440,134 @@
             </div>
         </section>
 
+        <style type="text/css">
+            .hiremebox {
+                padding: 120px 0;
+            }
 
-        <section class="hire-me" style="padding: 120px 0">
+            .hiremebox h4 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 34px;
+                color: #333333;
+            }
+
+            .hiremebox p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                color: #9a9a9a;
+            }
+
+            .hiremebox .hire-me-button {
+                color: var(--main-color);
+                border: 1px solid var(--main-color);
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                text-transform: capitalize;
+                font-weight: bold;
+                padding: 15px 30px;
+                float: right;
+                border-radius: 30px;
+                text-decoration: none;
+                margin-top: 20px;
+            }
+        </style>
+
+        <section class="hiremebox">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-sm-8">
-                            <h4 class="hire-me-title">MAKE IT AWESOME</h4>
-                            <p>
-                                Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                            </p>
-                        </div>
+                    <div class="col-sm-8">
+                        <h4 class="hire-me-title">MAKE IT AWESOME</h4>
+                        <p>
+                            Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                            Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                        </p>
+                    </div>
 
-                        <div class="col-sm-4">
-                            <a class="hire-me-button">Hire me</a>
-                        </div>
-
+                    <div class="col-sm-4">
+                        <a href="#" class="hire-me-button">Hire me now !</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <style type="text/css">
+            .feedback {
+                padding: 160px 0;
+                background-color: #f4f4f4;
+            }
 
-        <section class="feedback" style="padding: 160px 0; background-color: #f4f4f4">
+            .feedback h3 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 50px;
+                color: #0a0b0c;
+                text-align: center;
+                width: 500px;
+                margin: 0 auto;
+                quotes: "\201C""\201D""\2018""\2019";
+                position: relative;
+            }
+
+            .feedback h3:before {
+                color: #ccc;
+                content: open-quote;
+                font-size: 5em;
+                line-height: 0.1em;
+                margin-right: 0.25em;
+                vertical-align: -0.4em;
+                position: absolute;
+                top: 80px;
+                left: 0;
+            }
+
+            .feedback-item {
+                text-align: center;
+            }
+
+            .feedback-item img {
+                margin: auto;
+            }
+
+            .owl-dots {
+                text-align: center;
+                margin: 20px auto;
+            }
+
+            button.owl-dot {
+
+
+                width: 20px;
+                height: 20px;
+                border-radius: 30px;
+                margin: 0 12px;
+                padding: 20px !important;
+                border: 2px solid transparent;
+                position: relative;
+                outline: none;
+            }
+
+            button.owl-dot::after {
+                content: '';
+                background-color: #bebebe !important;
+                color: black !important;
+                width: 8px;
+                height: 8px;
+                border-radius: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            button.owl-dot.active {
+                border: 1px solid var(--main-color) !important;
+            }
+
+            .owl-carousel .owl-item .feedback-avatar {
+                width: 80px
+            }
+        </style>
+
+        <section class="feedback">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -408,7 +577,7 @@
                         <div class="owl-carousel">
                             <div class="feedback-item">
                                 <div class="feedback-info">
-                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" style="width: 80px">
+                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" alt="">
                                     <h5>John One</h5>
                                     <p class="feedback-job">CEO</p>
                                 </div>
@@ -420,7 +589,7 @@
 
                             <div class="feedback-item">
                                 <div class="feedback-info">
-                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" style="width: 80px">
+                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" alt="">
                                     <h5>John One</h5>
                                     <p class="feedback-job">CEO</p>
                                 </div>
@@ -432,7 +601,7 @@
 
                             <div class="feedback-item">
                                 <div class="feedback-info">
-                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" style="width: 80px">
+                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" alt="">
                                     <h5>John One</h5>
                                     <p class="feedback-job">CEO</p>
                                 </div>
@@ -444,7 +613,7 @@
 
                             <div class="feedback-item">
                                 <div class="feedback-info">
-                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" style="width: 80px">
+                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" alt="">
                                     <h5>John One</h5>
                                     <p class="feedback-job">CEO</p>
                                 </div>
@@ -457,7 +626,7 @@
                             <div class="feedback-item" >
 
                                 <div class="feedback-info">
-                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" style="width: 80px">
+                                    <img class="feedback-avatar" src="images/portfolio-website-template_17.png" alt="">
                                     <h5>John One</h5>
                                     <p class="feedback-job">CEO</p>
                                 </div>
@@ -474,13 +643,113 @@
             </div>
         </section>
 
+        <style type="text/css">
+            footer {
+                padding: 80px 0 30px 0;
+            }
 
-        <footer style="padding: 30px 0">
+            footer .footer-menu {
+                text-align: center;
+                vertical-align: center;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            footer .footer-menu nav {
+                float: left;
+                margin-top: 10px;
+            }
+
+            .footer-menu ul {
+                list-style: none;
+                margin: 0;
+            }
+
+            .footer-menu li {
+                float: left;
+            }
+
+            footer .footer-menu nav a {
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                color: #222222;
+                text-decoration: none;
+                padding: 20px 20px;
+            }
+            footer .footer-menu nav a:hover {
+                color: var(--main-color);
+            }
+
+            footer .footer-menu form {
+                float: right;
+                border: 1px solid #9b9b9b;
+                padding: 2px 20px;
+                border-radius: 40px;
+                width: 300px;
+                height: 44px;
+            }
+            footer .footer-menu form input.in-search {
+                border: none;
+                outline: none;
+                font-size: 18px;
+                height: 40px;
+            }
+
+            footer .footer-menu form .in-submit {
+                border: hidden;
+                outline: none;
+                background: none;
+            }
+
+            footer .footer-socials {
+                padding: 60px 0;
+                width: 400px;
+                margin: 0 auto;
+            }
+
+            footer .footer-socials > a {
+                font-size: 20px;
+                color: white;
+                background-color: #32ccfe;
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 50px;
+                margin-right: 44px;
+            }
+
+            footer .footer-copyright {
+                padding: 50px 0;
+                text-align: center;
+                border-top: 1px solid #f6f6f6;
+            }
+
+            @media screen and (max-width: 600px) {
+                .footer-menu li{
+                    float: none;
+                }
+
+                footer .footer-menu form {
+                    float: none;
+                    width: 100%;
+                }
+
+                footer .footer-menu nav {
+                    float: none;
+                    width: 100%;
+                }
+
+            }
+        </style>
+
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
 
-                        <div class="footer-menu">
+                        <div class="footer-menu clearfix ">
                             <nav>
                                 <ul class="clearfix">
                                     <li><a href="">Home</a> </li>
@@ -491,22 +760,24 @@
                             </nav>
 
                             <form name="" action="" method="post">
-                                <input type="text" name="search" placeholder="search">
-                                <i class="fas fa-search"></i>
+                                <input type="text" name="search" class="in-search" placeholder="Search ...">
+                                <button type="submit" class="in-submit"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
-                        <div class="footer-socials" style="padding: 50px 0; font-size: 32px">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="footer-copyright" style="padding: 50px 0; text-align: center; border-top: 3px solid grey">
-                            Copyright @2019 PSD Template
+
+                        <div class="footer-socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
 
                     </div>
                 </div>
+            </div>
+
+            <div class="footer-copyright">
+                Copyright @2019 PSD Template
             </div>
         </footer>
     </div>
