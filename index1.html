@@ -76,7 +76,7 @@
                 font-weight: bold;
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 1024px) {
                 header .logo {
                     text-align: center;
                 }
@@ -104,11 +104,11 @@
         <header class="clearfix">
             <div class="container">
                 <div class="row">
-                        <div class="logo col-sm-4 col-12">
+                        <div class="logo col-lg-4 col-12">
                             <a href="#">PORTFOLIO</a>
                         </div>
 
-                        <nav class="col-sm-6 col-12">
+                        <nav class="col-lg-6 col-12">
                             <ul class="clearfix">
                                 <li><a href="#">Home</a> </li>
                                 <li><a href="#">Demo</a> </li>
@@ -117,7 +117,7 @@
                             </ul>
                         </nav>
 
-                        <div class="col-sm-2 col-12 btn-hireme-box">
+                        <div class="col-lg-2 col-12 btn-hireme-box">
                             <a href="#" >Hire me!</a>
                         </div>
                 </div>
@@ -186,7 +186,12 @@
                 border-radius: 40px;
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 1224px) {
+
+                .banner .hero-image {
+                    height: auto;
+                }
+
                 .banner .hero-img > img {
                     height: auto;
                     width: 100%;
@@ -261,9 +266,10 @@
                 background-color: var(--main-color);
                 display: block;
                 position: absolute;
-                left: 170px;
+                left: 50%;
                 top: 60px;
                 text-align: center;
+                transform: translate(-50%,-50%);
             }
 
             .services .services-box {
@@ -565,6 +571,14 @@
             .owl-carousel .owl-item .feedback-avatar {
                 width: 80px
             }
+
+
+            @media screen and (max-width: 600px) {
+
+                .feedback h3 {
+                    font-size: 24px;
+                }
+            }
         </style>
 
         <section class="feedback">
@@ -649,10 +663,12 @@
             }
 
             footer .footer-menu {
-                text-align: center;
+               /* text-align: center;
                 vertical-align: center;
                 width: 70%;
-                margin: 0 auto;
+                margin: 0 auto;*/
+                display: flex;
+                justify-content: center;
             }
 
             footer .footer-menu nav {
@@ -663,6 +679,7 @@
             .footer-menu ul {
                 list-style: none;
                 margin: 0;
+                padding: 0;
             }
 
             .footer-menu li {
@@ -685,7 +702,7 @@
                 border: 1px solid #9b9b9b;
                 padding: 2px 20px;
                 border-radius: 40px;
-                width: 300px;
+                width: 280px;
                 height: 44px;
             }
             footer .footer-menu form input.in-search {
@@ -703,8 +720,10 @@
 
             footer .footer-socials {
                 padding: 60px 0;
-                width: 400px;
-                margin: 0 auto;
+                /*width: 400px;*/
+                /*margin: 0 auto;*/
+                display: flex;
+                justify-content: center;
             }
 
             footer .footer-socials > a {
@@ -717,7 +736,7 @@
                 border-radius: 50px;
                 text-align: center;
                 line-height: 50px;
-                margin-right: 44px;
+                margin: 0 22px;
             }
 
             footer .footer-copyright {
@@ -727,13 +746,20 @@
             }
 
             @media screen and (max-width: 600px) {
+
+                footer .footer-menu {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 .footer-menu li{
                     float: none;
+                    text-align: center;
                 }
 
                 footer .footer-menu form {
                     float: none;
-                    width: 100%;
+                    margin: 40px auto;
                 }
 
                 footer .footer-menu nav {
